@@ -1,8 +1,6 @@
 import pandas as pd
 import streamlit as st
 
-sns.set(style='dark')
-
 # Menggunakan raw string (r"") atau mengganti backslash (\) dengan double backslash (\\) pada path file CSV
 day_df = pd.read_csv("day_data.csv")
 hour_df = pd.read_csv("hour_data.csv")
