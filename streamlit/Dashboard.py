@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Menggunakan raw string (r"") atau mengganti backslash (\) dengan double backslash (\\) pada path file CSV
-day_df = pd.read_csv("day_data.csv")
-hour_df = pd.read_csv("hour_data.csv")
+day_df = pd.read_csv("streamlit/day_data.csv")
+hour_df = pd.read_csv("streamlit/hour_data.csv")
 
 def get_total_count_by_hour_df(hour_df):
     # Mengelompokkan DataFrame berdasarkan kolom "hours" dan menghitung total sum untuk kolom "total user"
