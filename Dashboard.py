@@ -1,5 +1,7 @@
 import pandas as pd
 import streamlit as st
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # Menggunakan raw string (r"") atau mengganti backslash (\) dengan double backslash (\\) pada path file CSV
 day_df = pd.read_csv("day_data.csv")
