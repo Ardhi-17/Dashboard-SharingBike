@@ -69,7 +69,7 @@ min_date_hour = hour_df["date"].min()
 max_date_hour = hour_df["date"].max()
 
 with st.sidebar:
-    st.title('SHARING BIKE YUK')
+    st.title('Data Penyewaan Sepeda')
     st.image("https://thumbs.dreamstime.com/z/bike-sharing-services-icon-vector-outline-illustration-sign-color-symbol-184331518.jpg")
 start_date, end_date = st.date_input(
         label='Rentang Waktu',
@@ -90,7 +90,7 @@ cas_df = total_casual_df(main_df_day)
 sum_order_items_df = sum_order(main_df_hour)
 season_df = create_seasonly_users_df(main_df_day)
 
-st.header('Bike Sharing :sparkles:')
+st.header('Bike Sharing Data')
 
 st.subheader('Daily Sharing')
 col1, col2, col3 = st.columns(3)
